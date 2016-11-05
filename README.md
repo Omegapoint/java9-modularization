@@ -19,10 +19,16 @@ The module definitions can be found in respective module-info.java
 `se.omegapoint.utils` exports two packages
 
 ## How to run
-Open a terminal and run
-```sh
-./compile-and-run-all.sh 198905117837 198905117839
-```
+1. Open a terminal 
+2. Set environment variable JAVA9_BIN to the path of the JDK 9 bin folder. E.g. on Mac this could be
+   ```sh
+   export JAVA9_BIN=/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin
+   ```
+   
+3. Run
+   ```sh
+   ./compile-and-run-all.sh 198905117837 198905117839
+   ```
 
 ## Questions
 1. What happens when a class in `interview` project attempts to call methods in se.omegapoint.utils.internal? (e.g. StringUtils...)
